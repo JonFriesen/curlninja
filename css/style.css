@@ -1,0 +1,99 @@
+
+/*Colours
+Background: #393939
+Buttons/Jewellery Active: #FF5A09
+Button inactive: #FF9900;
+Links: #F3843E;
+Text: #6E6E6E*/
+
+body {
+    background-color: #393939;
+    color: #6E6E6E;
+}
+
+#appContainer {
+	width: 500px;
+	margin-top: 20px;
+	margin-bottom: 1px;
+  color: #545454;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+  padding-top: 10px;
+}
+
+.form-control {
+  margin-top: 5px;
+}
+.section {
+  margin: 10px;
+}
+
+#header {
+  text-align: center;
+}
+
+#footer {
+  width: 500px;
+  padding-left: 10px;
+}
+
+#addMoreButtonContainer {
+ text-align: right;
+ margin-top: 5px;
+}
+
+#icon {
+  height: 100px;
+  width: 100px;
+}
+
+.btn {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    /*outline: 0 none;*/
+}
+ 
+.btn-default {
+    background: #FF9900;
+    color: #ffffff;
+}
+ 
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    background: #F3843E;
+    color: #ffffff;
+}
+ 
+.btn-default:active, .btn-default.active {
+    background: #FF5A09;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+/* unvisited link */
+a:link {
+    color: #6E6E6E;
+}
+
+/* visited link */
+a:visited {
+    color: #6E6E6E;
+}
+
+/* mouse over link */
+a:hover {
+    color: #6E6E6E;
+}
+
+/* selected link */
+a:active {
+    color: #6E6E6E;
+}

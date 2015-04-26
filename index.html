@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="js/curlninja.js"></script>
+		<title>curl.ninja</title>
+	</head>
+	<body>
+		<div id="appContainer" class="panel panel-default center">
+			<div id="header">
+
+				<h1><image id="icon" src="images/ninja.png"> curl.ninja</h1>
+			</div>
+			<!-- Request Type -->
+			<div id="requestContainer" class="section">
+				<span class="label label-default">HTTP Request Type</span>
+				<div class="btn-group" role="group" aria-label="...">
+				  <button type="button" class="btn btn-default reqType active">GET</button>
+				  <button type="button" class="btn btn-default reqType">POST</button>
+				  <button type="button" class="btn btn-default reqType">PUT</button>
+				  <button type="button" class="btn btn-default reqType">PATCH</button>
+				  <button type="button" class="btn btn-default reqType">DELETE</button>
+				</div>
+			</div>
+			<!-- URL -->
+			<div id="urlContainer" class="section">
+				<span class="label label-default">Target URL</span>
+				<input id="url" class="form-control" type="text" placeholder="http://curl.ninja" />
+			</div>
+			<!-- Headers -->
+			<div id="headersContainer" class="section">
+				<span class="label label-default">Headers</span>
+				<div class="header">
+					<input type="text" class="form-control" placeholder="Key" />
+					<input type="text" class="form-control" placeholder="Value" />
+				</div>
+			</div>
+			<div id="addMoreButtonContainer" class="section">
+				<button id="addMoreHeaders" type="button" class="btn btn-default" aria-label="Left Align">
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+				</button>
+			</div>
+			<!-- Body -->
+			<div id="bodyContainer" class="section">
+				<span class="label label-default">Request Body</span>
+				<textarea id="body" class="form-control" rows="4" cols="50" placeholder='{"Key":"Value"}'></textarea>
+			</div>
+			<!-- cURL Command -->
+			<div id="commandContainer" class="section">
+				<span class="label label-default">cURL Command</span>
+				<textarea id="curlCommand" class="form-control" rows="4" cols="50" placeholder="Command"></textarea>
+			</div>
+		</div>
+		<div id="footer" class="center">
+				<span><a href="http://jonfriesen.ca">Jon Friesen &copy; 2015</a>
+		</div>
+	</body>
+</html>
